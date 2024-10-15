@@ -1,0 +1,18 @@
+#include<stdio.h>
+void main()
+{
+    int a,i,j,k;
+    printf("enter the number:");
+    scanf("%d",&a);
+    for(i=5;i<a;i++)
+    {
+        for(j=4;j<i;j++)
+        {
+            for(k=3;k<j;k++)
+            {
+                if(k*k+j*j==i*i)
+                printf("\n %d %d %d",k,j,i);
+            }
+        }
+    }
+}
